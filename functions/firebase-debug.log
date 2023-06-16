@@ -1,0 +1,461 @@
+[debug] [2023-06-13T04:20:20.774Z] ----------------------------------------------------------------------
+[debug] [2023-06-13T04:20:20.777Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-06-13T04:20:20.777Z] CLI Version:   12.3.1
+[debug] [2023-06-13T04:20:20.778Z] Platform:      win32
+[debug] [2023-06-13T04:20:20.778Z] Node Version:  v18.16.0
+[debug] [2023-06-13T04:20:20.779Z] Time:          Tue Jun 13 2023 09:50:20 GMT+0530 (India Standard Time)
+[debug] [2023-06-13T04:20:20.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-13T04:20:20.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-13T04:20:20.953Z] > authorizing via signed-in user (gnanase@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-06-13T04:20:20.967Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-13T04:20:20.967Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-06-13T04:20:20.988Z] [hub] writing locator at C:\Users\admin\AppData\Local\Temp\hub-walmartnodeapp.json
+[debug] [2023-06-13T04:20:21.043Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-13T04:20:21.044Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-13T04:20:21.045Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-06-13T04:20:21.069Z] defaultcredentials: writing to file C:\Users\admin\AppData\Roaming\firebase\gnanase_gmail_com_application_default_credentials.json
+[debug] [2023-06-13T04:20:21.073Z] Setting GAC to C:\Users\admin\AppData\Roaming\firebase\gnanase_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\admin\\AppData\\Roaming\\firebase\\gnanase_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-13T04:20:21.076Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/walmartnodeapp/adminSdkConfig [none]
+[debug] [2023-06-13T04:20:21.677Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/walmartnodeapp/adminSdkConfig 200
+[debug] [2023-06-13T04:20:21.678Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/walmartnodeapp/adminSdkConfig {"projectId":"walmartnodeapp","storageBucket":"walmartnodeapp.appspot.com"}
+[debug] [2023-06-13T04:20:21.723Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-06-13T04:20:21.723Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-06-13T04:20:21.723Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\admin\\.cache\\firebase\\emulators\\ui-v1.11.6\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\admin\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.6\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-06-13T04:20:21.877Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-06-13T04:20:21.877Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\" for Cloud Functions..."}}
+[debug] [2023-06-13T04:20:22.003Z] Validating nodejs source
+[debug] [2023-06-13T04:20:24.096Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:20:24.096Z] Building nodejs source
+[debug] [2023-06-13T04:20:24.097Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:20:24.101Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:20:24.108Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:20:24.429Z] Serving at port 8392
+
+[debug] [2023-06-13T04:20:24.852Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:20:24.859Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] +  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/walmartnodeapp/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/walmartnodeapp/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-06-13T04:20:46.902Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app-2023-06-13T04:20:46.902Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:20:46.903Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app-2023-06-13T04:20:46.902Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:20:46.904Z] Accepted request GET /walmartnodeapp/us-central1/app --> us-central1-app
+[debug] [2023-06-13T04:20:46.909Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:20:46.910Z] [functions] Got req.url=/walmartnodeapp/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app, mapping to path=/"}}
+[debug] [2023-06-13T04:20:46.921Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-06-13T04:20:46.922Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-06-13T04:20:48.665Z] [runtime-status] [12556] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-13T04:20:48.669Z] [runtime-status] [12556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-13T04:20:48.669Z] [runtime-status] [12556] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-13T04:20:48.670Z] [runtime-status] [12556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-13T04:20:49.100Z] [runtime-status] [12556] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-13T04:20:49.101Z] [runtime-status] [12556] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-13T04:20:49.102Z] [runtime-status] [12556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-13T04:20:49.104Z] [runtime-status] [12556] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-13T04:20:49.107Z] [runtime-status] [12556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-13T04:20:49.108Z] [runtime-status] [12556] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-13T04:20:49.311Z] [runtime-status] [12556] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"walmartnodeapp","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0sMC4msUh9T0u\nIr+DJIyYYnKiCAskLEDoGP/Wwi8PSvc8EDPXlxNsrw4ZP4Nwx4XaCfCfpJhq+19G\nlFfFRxh7WlELWkStvZEQRITu+FUlRxPC0WoqC3aMlV7AwdEeAg6w6CkG5+RrC5Bd\ni/sfnLKINFWW7/5ThMOfdXTdINX6T9zTnRiNJW2Pa2hS4QtpeWI8yfmbPdr0Vk0e\nD+JBQnaOUEqMpYitdzDv9ePxSRv7SEWBV61XoYqim+9uSRxr4IWxXXl4JDYXF4co\n71NyiERHhNp257nSlMfg691c+6RFmVg5eQGNqGQdQmKJAYoMQ5DUodeKFtvz09uN\nDxvRlMQpAgMBAAECggEAEozf6EPpb6xOAOXL3BKdRYq74pMpU6ggbMOeRmXOr4b+\nfWHbdKt7sMmDDMgGvkYZoZIqLDWZeUg/1o7luOjs5EMYNW5pxR2EXlNug1sm4Koc\npwBZYiIlpFa0cN0lEyvaZsKa7azSeEPqaRQ1LqBnetDGpbWTWm8zpzQHkKktlqI+\nVj+gxwzSaKV0RDzQ2wuJ02dc8ugC2AmiSFEoRwYIE3Iof46RjpEirK7PFyqjR7k1\n1Rqz1naD4TXhaKfNXTm6VhoktewQ3FGHACqL8JaDnfcmiuUMaJ3dmoXamSr3UrlG\n77MJ1u3fsrcmmBSdssAQgBKjM2sEwX5oyDa0cwHYQQKBgQDzQo7ZmwhdFhcKKk+m\nxDcT7F0GVInGVcxLWxuocu0uW/fvUj9ZMgDoepm8XIMlL0wP4BVAcJ5LealvWx96\n7/PGL3ts1V7tFa4Kp8gzGAhHQjuwo+NWQPyZNRtLtK9yyJTWfHqlJ4W+8FnqLfOa\nwl5vIhX2LZZcs8anApdFiCYXCQKBgQC+J0+EYxXYoSIvY7iDU9Rl7OvnofIBJ9aJ\n8Ge/PqtOUsXJOk0u6niHOfUUjF2KuapJ9HOFDCJ2Ri/qY/0akB2UvN5WVVTU3eXk\nlDG/VYu/P+iMYLTWQn2bRoCsBjLt73uXs+HGhuzPrBdOPJauFoxOrNMKKCEaUQZC\nqWbthFRsIQKBgQC9LOeWhqBMc99bAmiLElCa59e4EopKeXK0r5ekuiuFP/RiYx3s\nqZxXLvDbsT4z7sJCHkuon2wa2fRQKxciLfTwDQD5ND3sNk3w72Ybhfb6I6Hzzp/+\n9e763nfpugwvQZmt64QdZ8z1HkluemnV0o5J8sINfopOcWhtfPBTHHwysQKBgHb9\nPmMHZfpDCpNBAYscgAKv+QbfbgKPHU7/4svnuWavoRjEpNvA2V81Q0lydG6EtCzH\nDSqqZz4/uWgg3Zcrq3cRoMfBae4yVNNucJrcOzCYGzsMoNyaiuMJgSckUeZWP660\nX4nNkI57j7HjdB7H+VCaEQ2AAwbmwNYiD0h90B5BAoGBAKaQnOAL1VKGanN/HaPZ\n9SuHEeKtPNwGCcph+cABKRCkBWhaenWk7Fps+Y+DAxPJ/d+HwNx2tkdrmzQD1fhs\nAyEtTR0DM7HJDyIJGUQGSX15ZbKLkyMpx+SMDd65lAetraqfcpJcw3qotBfLCFIj\neAn8gdcq5z7ym0/L6MsRLXEY\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-r2a4x@walmartnodeapp.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"walmartnodeapp\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0sMC4msUh9T0u\\nIr+DJIyYYnKiCAskLEDoGP/Wwi8PSvc8EDPXlxNsrw4ZP4Nwx4XaCfCfpJhq+19G\\nlFfFRxh7WlELWkStvZEQRITu+FUlRxPC0WoqC3aMlV7AwdEeAg6w6CkG5+RrC5Bd\\ni/sfnLKINFWW7/5ThMOfdXTdINX6T9zTnRiNJW2Pa2hS4QtpeWI8yfmbPdr0Vk0e\\nD+JBQnaOUEqMpYitdzDv9ePxSRv7SEWBV61XoYqim+9uSRxr4IWxXXl4JDYXF4co\\n71NyiERHhNp257nSlMfg691c+6RFmVg5eQGNqGQdQmKJAYoMQ5DUodeKFtvz09uN\\nDxvRlMQpAgMBAAECggEAEozf6EPpb6xOAOXL3BKdRYq74pMpU6ggbMOeRmXOr4b+\\nfWHbdKt7sMmDDMgGvkYZoZIqLDWZeUg/1o7luOjs5EMYNW5pxR2EXlNug1sm4Koc\\npwBZYiIlpFa0cN0lEyvaZsKa7azSeEPqaRQ1LqBnetDGpbWTWm8zpzQHkKktlqI+\\nVj+gxwzSaKV0RDzQ2wuJ02dc8ugC2AmiSFEoRwYIE3Iof46RjpEirK7PFyqjR7k1\\n1Rqz1naD4TXhaKfNXTm6VhoktewQ3FGHACqL8JaDnfcmiuUMaJ3dmoXamSr3UrlG\\n77MJ1u3fsrcmmBSdssAQgBKjM2sEwX5oyDa0cwHYQQKBgQDzQo7ZmwhdFhcKKk+m\\nxDcT7F0GVInGVcxLWxuocu0uW/fvUj9ZMgDoepm8XIMlL0wP4BVAcJ5LealvWx96\\n7/PGL3ts1V7tFa4Kp8gzGAhHQjuwo+NWQPyZNRtLtK9yyJTWfHqlJ4W+8FnqLfOa\\nwl5vIhX2LZZcs8anApdFiCYXCQKBgQC+J0+EYxXYoSIvY7iDU9Rl7OvnofIBJ9aJ\\n8Ge/PqtOUsXJOk0u6niHOfUUjF2KuapJ9HOFDCJ2Ri/qY/0akB2UvN5WVVTU3eXk\\nlDG/VYu/P+iMYLTWQn2bRoCsBjLt73uXs+HGhuzPrBdOPJauFoxOrNMKKCEaUQZC\\nqWbthFRsIQKBgQC9LOeWhqBMc99bAmiLElCa59e4EopKeXK0r5ekuiuFP/RiYx3s\\nqZxXLvDbsT4z7sJCHkuon2wa2fRQKxciLfTwDQD5ND3sNk3w72Ybhfb6I6Hzzp/+\\n9e763nfpugwvQZmt64QdZ8z1HkluemnV0o5J8sINfopOcWhtfPBTHHwysQKBgHb9\\nPmMHZfpDCpNBAYscgAKv+QbfbgKPHU7/4svnuWavoRjEpNvA2V81Q0lydG6EtCzH\\nDSqqZz4/uWgg3Zcrq3cRoMfBae4yVNNucJrcOzCYGzsMoNyaiuMJgSckUeZWP660\\nX4nNkI57j7HjdB7H+VCaEQ2AAwbmwNYiD0h90B5BAoGBAKaQnOAL1VKGanN/HaPZ\\n9SuHEeKtPNwGCcph+cABKRCkBWhaenWk7Fps+Y+DAxPJ/d+HwNx2tkdrmzQD1fhs\\nAyEtTR0DM7HJDyIJGUQGSX15ZbKLkyMpx+SMDd65lAetraqfcpJcw3qotBfLCFIj\\neAn8gdcq5z7ym0/L6MsRLXEY\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-r2a4x@walmartnodeapp.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2023-06-13T04:20:49.333Z] [runtime-status] [12556] Functions runtime initialized. {"cwd":"C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\admin\\\\Documents\\\\class project in git\\\\firebase-app-master\\\\firebase-app-master\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-13T04:20:49.333Z] [runtime-status] [12556] Listening to port: \\?\pipe\fire_emu_235d8e06a33d754c {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [12556] Listening to port: \\\\?\\pipe\\fire_emu_235d8e06a33d754c"}}
+[debug] [2023-06-13T04:20:49.361Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:20:49.361Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:20:49.362Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:20:49.371Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 9.8395ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 9.8395ms"}}
+[debug] [2023-06-13T04:20:49.373Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:20:49.373Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:20:49.374Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:20:49.374Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:20:49.378Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app-2023-06-13T04:20:49.378Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:20:49.378Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app-2023-06-13T04:20:49.378Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:20:49.378Z] Accepted request GET /walmartnodeapp/us-central1/app --> us-central1-app
+[debug] [2023-06-13T04:20:49.384Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:20:49.384Z] [functions] Got req.url=/walmartnodeapp/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app, mapping to path=/"}}
+[debug] [2023-06-13T04:20:49.384Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:20:49.385Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:20:49.388Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 3.677ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 3.677ms"}}
+[debug] [2023-06-13T04:20:49.399Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:20:49.399Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:20:49.399Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:20:49.400Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:20:54.464Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app/form-2023-06-13T04:20:54.464Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:20:54.465Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app/form-2023-06-13T04:20:54.464Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:20:54.465Z] Accepted request GET /walmartnodeapp/us-central1/app/form --> us-central1-app
+[debug] [2023-06-13T04:20:54.470Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:20:54.470Z] [functions] Got req.url=/walmartnodeapp/us-central1/app/form, mapping to path=/form {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app/form, mapping to path=/form"}}
+[debug] [2023-06-13T04:20:54.470Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:20:54.471Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:20:54.479Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.7643ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.7643ms"}}
+[debug] [2023-06-13T04:20:54.482Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:20:54.482Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:20:54.482Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:20:54.482Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:21:05.712Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app/-2023-06-13T04:21:05.711Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:21:05.712Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app/-2023-06-13T04:21:05.711Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:21:05.712Z] Accepted request GET /walmartnodeapp/us-central1/app/ --> us-central1-app
+[debug] [2023-06-13T04:21:05.721Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:21:05.721Z] [functions] Got req.url=/walmartnodeapp/us-central1/app/, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app/, mapping to path=/"}}
+[debug] [2023-06-13T04:21:05.722Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:21:05.722Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:21:05.728Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 5.8ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 5.8ms"}}
+[debug] [2023-06-13T04:21:05.729Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:21:05.729Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:21:05.729Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:21:05.729Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:21:19.406Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app/products/categories-2023-06-13T04:21:19.406Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:21:19.406Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app/products/categories-2023-06-13T04:21:19.406Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:21:19.406Z] Accepted request GET /walmartnodeapp/us-central1/app/products/categories --> us-central1-app
+[debug] [2023-06-13T04:21:19.414Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:21:19.414Z] [functions] Got req.url=/walmartnodeapp/us-central1/app/products/categories, mapping to path=/products/categories {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app/products/categories, mapping to path=/products/categories"}}
+[debug] [2023-06-13T04:21:19.414Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:21:19.415Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:21:19.421Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 6.4534ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 6.4534ms"}}
+[debug] [2023-06-13T04:21:19.422Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:21:19.422Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:21:19.422Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:21:19.422Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:21:31.112Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app/getAllProducts-2023-06-13T04:21:31.112Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:21:31.112Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app/getAllProducts-2023-06-13T04:21:31.112Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:21:31.112Z] Accepted request GET /walmartnodeapp/us-central1/app/getAllProducts --> us-central1-app
+[debug] [2023-06-13T04:21:31.118Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:21:31.118Z] [functions] Got req.url=/walmartnodeapp/us-central1/app/getAllProducts, mapping to path=/getAllProducts {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app/getAllProducts, mapping to path=/getAllProducts"}}
+[debug] [2023-06-13T04:21:31.118Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:21:31.119Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:21:31.124Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 5.3522ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 5.3522ms"}}
+[debug] [2023-06-13T04:21:31.127Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:21:31.127Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:21:31.127Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:21:31.127Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:23:41.559Z] [work-queue] {"queuedWork":["/walmartnodeapp/us-central1/app/myfile-2023-06-13T04:23:41.559Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:23:41.559Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/walmartnodeapp/us-central1/app/myfile-2023-06-13T04:23:41.559Z"],"workRunningCount":1}
+[debug] [2023-06-13T04:23:41.559Z] Accepted request GET /walmartnodeapp/us-central1/app/myfile --> us-central1-app
+[debug] [2023-06-13T04:23:41.567Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-13T04:23:41.568Z] [functions] Got req.url=/walmartnodeapp/us-central1/app/myfile, mapping to path=/myfile {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/walmartnodeapp/us-central1/app/myfile, mapping to path=/myfile"}}
+[debug] [2023-06-13T04:23:41.568Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-13T04:23:41.569Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: BUSY"}}
+[debug] [2023-06-13T04:23:41.574Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 5.0655ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 5.0655ms"}}
+[debug] [2023-06-13T04:23:41.575Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: IDLE"}}
+[debug] [2023-06-13T04:23:41.575Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-13T04:23:41.575Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-13T04:23:41.575Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-13T04:24:29.720Z] File C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-13T04:24:30.729Z] Validating nodejs source
+[debug] [2023-06-13T04:24:32.564Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:24:32.564Z] Building nodejs source
+[debug] [2023-06-13T04:24:32.564Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:24:32.566Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:24:32.574Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:24:32.848Z] Serving at port 8730
+
+[debug] [2023-06-13T04:24:33.326Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:24:33.331Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-13T04:24:33.344Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-06-13T04:24:33.344Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: FINISHING"}}
+[debug] [2023-06-13T04:24:33.354Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: exited"}}
+[debug] [2023-06-13T04:24:33.354Z] [worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-a8a79cb6-cc30-4b58-8e87-2b1ebf1479f2]: FINISHED"}}
+[debug] [2023-06-13T04:24:55.444Z] File C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-13T04:24:56.452Z] Validating nodejs source
+[debug] [2023-06-13T04:24:58.253Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:24:58.253Z] Building nodejs source
+[debug] [2023-06-13T04:24:58.253Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:24:58.255Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:24:58.262Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:24:58.563Z] Serving at port 8236
+
+[debug] [2023-06-13T04:24:58.963Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:24:58.967Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-13T04:25:10.404Z] File C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-13T04:25:11.411Z] Validating nodejs source
+[debug] [2023-06-13T04:25:13.109Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:25:13.110Z] Building nodejs source
+[debug] [2023-06-13T04:25:13.110Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:25:13.111Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:25:13.119Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:25:13.394Z] Serving at port 8234
+
+[debug] [2023-06-13T04:25:13.940Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:25:13.952Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-13T04:25:58.419Z] File C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-13T04:25:59.421Z] Validating nodejs source
+[debug] [2023-06-13T04:26:02.536Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:26:02.536Z] Building nodejs source
+[debug] [2023-06-13T04:26:02.536Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:26:02.539Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:26:02.546Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:26:02.553Z] File C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-13T04:26:02.829Z] Serving at port 8681
+
+[debug] [2023-06-13T04:26:03.256Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:26:03.260Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-13T04:26:03.567Z] Validating nodejs source
+[debug] [2023-06-13T04:26:05.422Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:26:05.422Z] Building nodejs source
+[debug] [2023-06-13T04:26:05.422Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:26:05.424Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:26:05.429Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:26:05.758Z] Serving at port 8143
+
+[debug] [2023-06-13T04:26:06.153Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:26:06.157Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-13T04:30:36.592Z] File C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\key.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\admin\\Documents\\class project in git\\firebase-app-master\\firebase-app-master\\functions\\key.json changed, reloading triggers"}}
+[debug] [2023-06-13T04:30:37.607Z] Validating nodejs source
+[debug] [2023-06-13T04:30:39.885Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-13T04:30:39.885Z] Building nodejs source
+[debug] [2023-06-13T04:30:39.886Z] Failed to find version of module node: reached end of search path C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-13T04:30:39.887Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-13T04:30:39.893Z] Found firebase-functions binary at 'C:\Users\admin\Documents\class project in git\firebase-app-master\firebase-app-master\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-13T04:30:40.210Z] Serving at port 8748
+
+[debug] [2023-06-13T04:30:40.723Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-13T04:30:40.729Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
